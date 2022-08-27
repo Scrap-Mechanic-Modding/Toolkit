@@ -3,6 +3,8 @@ project(TOOLKIT)
 
 IF(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/deps/Mapping")
 	add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/deps/Mapping")
+ENDIF(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/deps/Mapping")
+
 
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/modules/module1/")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/modules/module2/")
