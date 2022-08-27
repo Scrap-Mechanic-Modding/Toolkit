@@ -68,12 +68,9 @@ jobs:
       uses: lukka/get-cmake@latest
 
     - name: Run CMake 
-        uses: lukka/run-cmake@v10
-        with:
-          # This is the default path to the CMakeLists.txt along side the
-          # CMakePresets.json. Change if you need have CMakeLists.txt and CMakePresets.json
-          # located elsewhere.
-          cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
+      uses: lukka/run-cmake@v10
+      with:
+        cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
