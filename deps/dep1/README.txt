@@ -1,0 +1,1 @@
+Normally, these dependency folders would be cloned as a Git submodule.
