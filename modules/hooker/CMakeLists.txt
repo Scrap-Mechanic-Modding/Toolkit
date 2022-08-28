@@ -1,5 +1,5 @@
 add_library(hooker STATIC)
-add_dependency(hooker Mapping)
+add_dependencies(hooker Mapping)
 
 target_sources(hooker PRIVATE
 	src/test.cpp
